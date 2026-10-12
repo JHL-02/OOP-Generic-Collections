@@ -20,7 +20,10 @@
         #endregion
 
         #region METHODS
-
+        public override string ToString()
+        {
+            return $"ID: {ID}, Name {Name}, Gender {Gender}, Salary: {Salary}";
+        }
         #endregion
     }
 }
