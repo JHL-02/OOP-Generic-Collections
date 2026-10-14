@@ -1,18 +1,15 @@
-﻿using System.Net.Http.Headers;
-using System.Threading.Channels;
-
-namespace OOP_Generic_Collections
+﻿namespace OOP_Generic_Collections
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             #region ALL EMPLOYEES
-            var employee1 = new Employee(1001, "Kiara", "female", 53885.45);
-            var employee2 = new Employee(1002, "Kai", "Male", 57673.15);
-            var employee3 = new Employee(1003, "Niko", "Male", 50711.95);
-            var employee4 = new Employee(1004, "Ivy", "Female", 62209.00);
-            var employee5 = new Employee(1005, "Astrid", "Female", 52656.75);
+            var employee1 = new Employee(1001, "Kiara", Gender.Female, 53885.45);
+            var employee2 = new Employee(1002, "Kai", Gender.Male, 57673.15);
+            var employee3 = new Employee(1003, "Niko", Gender.Male, 50711.95);
+            var employee4 = new Employee(1004, "Ivy", Gender.Female, 62209.00);
+            var employee5 = new Employee(1005, "Astrid", Gender.Female, 52656.75);
             #endregion
 
             #region PART 1
@@ -104,14 +101,14 @@ namespace OOP_Generic_Collections
             Console.WriteLine();
 
             //FIND FIRST
-            Employee firstMale = newEmployees.Find(e => e.Gender == "Male");
+            Employee firstMale = newEmployees.Find(e => e.Gender == Gender.Male);
             Console.WriteLine("The first male employee is:");
             Console.WriteLine(firstMale);
 
             Console.WriteLine();
 
             //FIND ALL
-            List<Employee> allMales = newEmployees.FindAll(e => e.Gender == "Male");
+            List<Employee> allMales = newEmployees.FindAll(e => e.Gender == Gender.Male);
             Console.WriteLine("All the male employees are:");
             foreach (var all in allMales)
             {
