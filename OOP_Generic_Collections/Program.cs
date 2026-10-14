@@ -5,11 +5,11 @@
         static void Main(string[] args)
         {
             #region ALL EMPLOYEES
-            var employee1 = new Employee(1001, "Kiara", Gender.Female, 53885.45);
-            var employee2 = new Employee(1002, "Kai", Gender.Male, 57673.15);
-            var employee3 = new Employee(1003, "Niko", Gender.Male, 50711.95);
-            var employee4 = new Employee(1004, "Ivy", Gender.Female, 62209.00);
-            var employee5 = new Employee(1005, "Astrid", Gender.Female, 52656.75);
+            var employee1 = new Employee(1001, "Kiara", Gender.Female, 53885.45m);
+            var employee2 = new Employee(1002, "Kai", Gender.Male, 57673.15m);
+            var employee3 = new Employee(1003, "Niko", Gender.Male, 50711.95m);
+            var employee4 = new Employee(1004, "Ivy", Gender.Female, 62209.00m);
+            var employee5 = new Employee(1005, "Astrid", Gender.Female, 52656.75m);
             #endregion
 
             #region PART 1

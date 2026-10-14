@@ -1,4 +1,5 @@
-﻿namespace OOP_Generic_Collections
+﻿/*
+namespace OOP_Generic_Collections
 {
     internal class Employee
     {
@@ -6,11 +7,11 @@
         public int ID { get; set; }
         public string Name { get; set; }
         public Gender Gender { get; set; }
-        public double Salary { get; set; }
+        public decimal Salary { get; set; }
         #endregion
 
         #region CONSTRUCT
-        public Employee(int id, string name, Gender gender, double salary)
+        public Employee(int id, string name, Gender gender, decimal salary)
         {
             ID = id;
             Name = name;
@@ -26,5 +27,6 @@
         }
         #endregion
     }
-    internal enum Gender { Male, Female} 
+    internal enum Gender { Male, Female }
 }
+*/
